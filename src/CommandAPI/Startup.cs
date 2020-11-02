@@ -53,7 +53,7 @@ namespace CommandAPI
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, CommandContext context)
         {
             context.Database.Migrate();
-            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -65,7 +65,7 @@ namespace CommandAPI
             {
                 //SECTION 2. Add code below
                 endpoints.MapControllers();
- 
+                //test1
             });
         }
     }
